@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.myFont {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
