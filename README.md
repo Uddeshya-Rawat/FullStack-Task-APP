@@ -17,9 +17,10 @@ This is the **frontend** of a Task Management App built using **React**, **Vite*
 ```bash
 your-project/
 ├── src/
-│   ├── components/       # Reusable UI components
-│   ├── pages/            # Page components
+│         
+│             
 │   ├── Context/          # Global context for tasks
+    ├── pages/            # Page components
 │   ├── App.jsx           # App entry
 │   └── main.jsx          # Vite entry point
 ├── public/
