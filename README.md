@@ -1,12 +1,82 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 Task Management Frontend
 
-Currently, two official plugins are available:
+This is the **frontend** of a Task Management App built using **React**, **Vite**, and **Tailwind CSS**. It allows users to create, view, mark as complete, and delete tasks through an intuitive and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ React (with Vite)
+- 💨 Tailwind CSS
+- 🧠 State Management (React Context)
+- 🌐 Fetch API for server communication
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Folder Structure
+
+```bash
+your-project/
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Page components
+│   ├── Context/          # Global context for tasks
+│   ├── App.jsx           # App entry
+│   └── main.jsx          # Vite entry point
+├── public/
+└── index.html
+```
+
+```json
+"dependencies": {
+    "@tailwindcss/vite": "^4.1.6",   // for css 
+    "react": "^19.1.0",              
+    "react-dom": "^19.1.0",         
+    "react-icons": "^5.5.0",         // for arrow icons 
+    "react-router-dom": "^7.6.0",    // for routing
+    "tailwindcss": "^4.1.6",         
+    
+  },
+```
+
+🛠️ Installation Guide
+
+```bash
+git clone https://github.com/Uddeshya-Rawat/FullStack-Task-APP.git
+npm install               ## install dependencies
+npm i react-router-dom    ## install router
+npm i react-icons         ## install icons
+
+```
+Make sure backend us running 
+
+
+
+🛠️ Installation Tailwind CSS
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+```bash
+## vite.config.ts
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+
+## index.css
+
+## remove pre programmed css 
+@import "tailwindcss";
+
+
+npm run dev ## to start the react app
+
+``` 
+
+for further querries
+
+📧 Email: [uddeshyarawat4@gmail.com](mailto:uddeshyarawat4@gmail.com)
