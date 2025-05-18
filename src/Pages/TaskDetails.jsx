@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { TaskContext } from '../Context/TaskContexProvidert'
 import { useNavigate, useParams } from 'react-router-dom'
+import { HiArrowNarrowLeft } from "react-icons/hi";
 
 const TaskDetails = () => {
   const { allTask,setAllTask } = useContext(TaskContext)
@@ -20,6 +21,8 @@ const TaskDetails = () => {
   if (!selectedTask) {
     return <div>Loading task details or task not found...</div>
   }
+
+
 
   // delete Task
   const deleteTask = async () => {
@@ -43,11 +46,36 @@ const TaskDetails = () => {
   
 };
 
+
+// update mark completed 
+const markComplete=async()=>{
+    try{
+      const res=await fetch(`http://localhost:8000/updateTask/${cleanId}`,{
+        method:"PATCH"
+      })
+      const task=await res.json()
+      // update the state
+      const updatedTasks = allTask.filter(task => task._id !== cleanId);
+      setAllTask([...updatedTasks,task])
+    
+      
+
+    }catch(error){
+      console.log(error)
+    }
+
+    navigate(`/task/${id}`)
+}
+
   return (
     <div className="h-screen bg-gradient-to-b from-[#08203e] to-[#557c93] text-white flex flex-col items-center px-4">
-      <div className='border text-[#08203e] flex flex-col items-center px-4 mt-14 rounded bg-white'>
+      <button className="flex absolute top-4 left-4 items-center gap-1 text-white poetsen-one-regular hover:text-teal-500"  onClick={()=>navigate('/allTask')}>
+              <HiArrowNarrowLeft className="text-lg" />
+              Go Back
+            </button>
+      <div className='border  flex flex-col items-center px-4 mt-14 rounded bg-blur text-white '>
         <h2 className="text-4xl myFont mt-12 text-center poetsen-one-regular "> {selectedTask.title}</h2>
-        <p className=" myFont mt-12 text-center poetsen-one-regular"> {selectedTask.description}</p>
+        <p className=" myFont mt-8 mb-7 text-center poetsen-one-regular"> {selectedTask.description}</p>
 
         <div className=' flex  gap-5'>
           {selectedTask.completed ? (
@@ -62,7 +90,8 @@ const TaskDetails = () => {
               className="px-6 py-2 bg-red-600 text-white font-semibold rounded hover:bg-red-700 mt-5 mb-5"
               onClick={() => {
                 // add your handler here to mark as completed
-                alert('Mark as completed clicked');
+                markComplete()
+                
               }}
             >
               Mark as Completed
@@ -73,7 +102,6 @@ const TaskDetails = () => {
             onClick={() => {
               // add your handler here to mark as completed
               deleteTask()
-              alert('Removed');
             }}
           >
             Remove

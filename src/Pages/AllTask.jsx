@@ -23,9 +23,9 @@ const AllTask = () => {
         <div className="h-screen bg-gradient-to-b from-[#08203e] to-[#557c93] text-white flex flex-col items-center px-4">
             <div className='text-7xl myFont mt-12 text-center poetsen-one-regular '>All Tasks</div>
             {
-                allTask.length < 1 ? <div className='flex flex-col gap-y-10 h-screen'>
+                allTask.length < 1 ? <div className='flex flex-col gap-y-20 h-screen'>
                     <h1 className='text-2xl font-bold text-white-800 mt-14'>Empty Task List </h1>
-                    
+
                 </div> : <div className='flex gap-2 overflow-hidden justify-between mt-15 '>
                     {allTask.map((task) => (
                         <div
@@ -42,8 +42,8 @@ const AllTask = () => {
                 </div>
             }
             <NavLink to="/createTask"><button className="px-5 py-5 md:px-5 md:py-6 bg-gradient-to-l from-[#294861] to-[#294861]  font-extrabold rounded-lg text-white sm:font-extrabold sm:transition-transform sm:duration-200 sm:ease-out sm:hover:scale-105 poetsen-one-regular shadow-2xl sm:hover:shadow-black text-xl sm:hover:bg-none hover:bg-white  sm:hover:text-[#294861] mt-10 mb-8">
-                        Create Task
-                    </button></NavLink>
+                Create Task
+            </button></NavLink>
         </div>
 
     )
