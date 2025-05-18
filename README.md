@@ -87,9 +87,11 @@ npm run dev ## to start the react app
 
 
 
-### Screen Shots 
-
-[Welcome Page](https://github.com/Uddeshya-Rawat/FullStack-Task-APP/issues/1#issue-3071880385)
+### ScreenShots
+![Welcome_Page](./ScreenShots/01_Welcome_page.png)
+![Create_Task](./ScreenShots/02_CreateTask.png)
+![See_All_Task](./ScreenShots/03_View_ALL_Task.png)
+![View_Task_Details](./ScreenShots/04_View_Task_Details.png)
 
 for further querries
 
