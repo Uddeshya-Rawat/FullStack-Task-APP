@@ -65,14 +65,17 @@ export default defineConfig({
     tailwindcss(),
   ],
 })
+```
 
 
 ## index.css
-
 ## remove pre programmed css 
+```bash
 @import "tailwindcss";
+```
 
-
+## start the react app
+```bash
 npm run dev ## to start the react app
 
 ``` 
