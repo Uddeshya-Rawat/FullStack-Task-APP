@@ -74,7 +74,7 @@ const markComplete=async()=>{
               Go Back
             </button>
       <div className='border  flex flex-col items-center px-4 mt-14 rounded bg-blur text-white '>
-        <h2 className="text-4xl myFont mt-12 text-center poetsen-one-regular "> {selectedTask.title}</h2>
+        <h2 className="text-4xl myFont mt-12 text-center poetsen-one-regular "><span className=''>TITLE :</span> {selectedTask.title}</h2>
         <p className=" myFont mt-8 mb-7 text-center poetsen-one-regular"> {selectedTask.description}</p>
 
         <div className=' flex  gap-5'>

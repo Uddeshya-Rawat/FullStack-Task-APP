@@ -49,7 +49,7 @@ const CreateTask = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#08203e] to-[#557c93] flex items-center justify-center px-4">
-      <button className="flex absolute top-4 left-4 items-center gap-1 text-white poetsen-one-regular hover:text-teal-500"  onClick={()=>navigate('/allTask')}>
+      <button className="flex absolute top-4 left-4 items-center gap-1 text-white poetsen-one-regular hover:text-teal-500"  onClick={()=>navigate('/')}>
         <HiArrowNarrowLeft className="text-lg" />
         Go Back
       </button>

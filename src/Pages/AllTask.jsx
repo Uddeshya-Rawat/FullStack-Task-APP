@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { TaskContext } from '../Context/TaskContexProvidert'
+import { HiArrowNarrowLeft } from "react-icons/hi";
 
 
 
@@ -21,6 +22,10 @@ const AllTask = () => {
 
     return (
         <div className="h-screen bg-gradient-to-b from-[#08203e] to-[#557c93] text-white flex flex-col items-center px-4">
+            <button className="flex absolute top-4 left-4 items-center gap-1 text-white poetsen-one-regular hover:text-teal-500"  onClick={()=>navigate('/')}>
+              <HiArrowNarrowLeft className="text-lg" />
+              Go Back
+            </button>
             <div className='text-7xl myFont mt-12 text-center poetsen-one-regular '>All Tasks</div>
             {
                 allTask.length < 1 ? <div className='flex flex-col gap-y-20 h-screen'>
