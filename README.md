@@ -1,5 +1,5 @@
 
-# 📝 Task Management Frontend
+#  Task Management Frontend
 
 This is the **frontend** of a Task Management App built using **React**, **Vite**, and **Tailwind CSS**. It allows users to create, view, mark as complete, and delete tasks through an intuitive and responsive UI.
 
@@ -12,20 +12,20 @@ This is the **frontend** of a Task Management App built using **React**, **Vite*
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```bash
 your-project/
 ├── src/
-│         
-│             
-│   ├── Context/          # Global context for tasks
+    ├── Context/          # Global context for tasks
     ├── pages/            # Page components
 │   ├── App.jsx           # App entry
 │   └── main.jsx          # Vite entry point
 ├── public/
 └── index.html
 ```
+
+### DEPENDENCIES
 
 ```json
 "dependencies": {
@@ -39,7 +39,7 @@ your-project/
   },
 ```
 
-🛠️ Installation Guide
+### Installation Guide REACT APP
 
 ```bash
 git clone https://github.com/Uddeshya-Rawat/FullStack-Task-APP.git
@@ -48,15 +48,18 @@ npm i react-router-dom    ## install router
 npm i react-icons         ## install icons
 
 ```
-Make sure backend us running 
 
 
 
-🛠️ Installation Tailwind CSS
+### TailWind Installation Guide
 
 ```bash
 npm install tailwindcss @tailwindcss/vite
 ```
+
+
+CHANGE THE CONFIG FILE
+
 ```bash
 ## vite.config.ts
 import { defineConfig } from 'vite'
@@ -69,8 +72,7 @@ export default defineConfig({
 ```
 
 
-## index.css
-## remove pre programmed css 
+  REMOVE THE PREPROGRAMMED CSS IN INDEX.CSS AND ADD THIS 
 ```bash
 @import "tailwindcss";
 ```
@@ -80,6 +82,8 @@ export default defineConfig({
 npm run dev ## to start the react app
 
 ``` 
+
+### Make Sure your Server us running on different port
 
 for further querries
 
